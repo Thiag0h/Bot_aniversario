@@ -81,9 +81,7 @@ async def aniversario(ctx, data):
     await ctx.send(f"✅ Aniversário registrado como {data} para {ctx.author.name}!")
     print(f"Comando chamado por {ctx.author} com data {data}")
 
-@bot.command()
-async def oi(ctx):
-    await ctx.send("Olá!")
+bot.run(os.getenv("TOKEN"))
 
 
 
